@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DOM (Document Object Model) </title>
+
+  <!-- Bootstrap Url -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+  
+  <!-- <input Value="Hello" type="text" id="search1"> -->
+  <!-- <button id="btn"> Submit </button>
+  <p id="p"></p> --> 
+ 
+  <script>
+
+  // const getsearch = document.getElementById("search1");
+  // const getbtn = document.getElementById("btn");
+  // const getparagraph = document.getElementById("p");
+
+  // const New = getbtn.addEventListener("click", function(cv)
+  // {
+  //     getparagraph.innerHTML = getsearch.value
+  //     console.log(getsearch.value);
+  // })
+  
+  </script>
+
+   <hr>
+
+  <br>
+
+  &nbsp; &nbsp;  Enter the Number A : <input Value="" type="text" id="search1" class="txt1">
+   <br>
+   <br>
+   &nbsp; &nbsp; Enter the Number B : <input Value="" type="text" id="search2" class="txt2">
+
+   <br>
+   <br>
+
+   &nbsp; &nbsp;  &nbsp; &nbsp;  <p id="p" class="p1"></p>
+
+   &nbsp; &nbsp; <button id="btn" class="btn btn-success"> Submit </button>
+ 
+  <br>
+
+  <hr>
+
+  <script>
+
+  const getsearch1 = document.getElementById("search1");
+  const getsearch2 = document.getElementById("search2");
+  const getbtn = document.getElementById("btn");
+  const getparagraph = document.getElementById("p");
+
+  const New = getbtn.addEventListener("click",function(clk){
+        getparagraph.innerHTML = parseInt (getsearch1.value) + parseInt (getsearch2.value)
+  });
+  
+</script>
+
+<script>
+
+  // const getsearch1 = document.getElementsByClassName("txt1");
+  // const getsearch2 = document.getElementsByClassName("txt2");
+  // const getbtn = document.getElementsByClassName("button");
+  // const getparagraph = document.getElementsByClassName("p1");
+
+  // const New = getbtn.addEventListener("click",function(cr){
+  //        getparagraph.innerHTML = parseInt (getsearch1.value) + parseInt (getsearch2.value)
+  //        console.log(getparagraph.value);
+  // });
+
+</script>
+
+<script>
+
+        // document.getElementById("p").innerHTML = "Hello Umang!";
+
+</script>
+
+<!-- Validation Form in JS -->
+
+<!-- <form name="myForm" onsubmit="return validateform()" method="post" action="Map.html">
+
+   Enter the Name : <input type="text" name="name">
+   <input type="submit" value="Submit">
+
+</form>
+
+<script>
+
+  function validateform(){
+    let x = document.forms["myForm"]["name"].value;
+
+    if(x == ""){
+        alert ("*Name must be filled");
+        return false;
+    }
+  } -->
+
+</script>
+
+
+<script>
+
+
+//Create a new array that contains fields "fullName", "fullAddress", "yearOfBirth" from students array 
+
+// List all the products in UI with their price like "Product A - $19.99"
+
+const products = [
+    {
+        id: 1,
+        name: "Product A",
+        details: {
+            description: "This is the description for Product A",
+            price: 19.99
+        }
+    },
+    {
+        id: 2,
+        name: "Product B",
+        details: {
+            description: "Product B is great for your needs",
+            price: 29.99
+        }
+    },
+    {
+        id: 3,
+        name: "Product C",
+        details: {
+            description: "Get Product C at a discounted price",
+            price: 14.99
+        }
+    },
+    {
+        id: 4,
+        name: "Product D",
+        details: {
+            description: "Introducing Product D with advanced features",
+            price: 39.99
+        }
+    },
+    {
+        id: 5,
+        name: "Product E",
+        details: {
+            description: "Product E is your go-to solution for all tasks",
+            price: 24.99
+        }
+    }
+];
+
+
+</script>
+
+<script>
+
+  // const ulTag1 =  document.getElementById("ulTag");
+  // const liTag = document.getElementById("liTag");
+
+  // for(const Product of products){
+  //         const liTag = document.createElement("li");
+  //         ulTag1.append(liTag);
+  //         liTag.innerHTML = `${Product.name} - $${Product.details.price}`;
+  // }
+
+</script>
+
+
+&nbsp; &nbsp; &nbsp; <input type="text" id="txtsearch" placeholder="Enter the value..">
+&nbsp; &nbsp;<input type="button" id="btn1" value="Add" class="btn btn-primary"> 
+&nbsp; &nbsp;<input type="button" id="btn2" value="Remove" class="btn btn-danger" onclick="deletefun()"> 
+
+<ul  id="ulTag">
+    
+  <li id="liTag"> 
+
+  </li>
+    
+</ul>
+
+<script>
+
+  // const ulTag1 =  document.getElementById("ulTag");
+  // const liTag1 =  document.getElementById("liTag");
+  // const txtsearch1 = document.getElementById("txtsearch");
+  // const getbtn1 = document.getElementById("btn1");
+  // const getbtn2 = document.getElementById("btn2");
+  // const getbtn3 = document.getElementById("btn3");
+ 
+  
+  //  getbtn1.addEventListener("click",() => {
+  //   const liTag = document.createElement("li");
+  //   liTag.innerHTML = `${txtsearch1.value} <input type="button" id="btn3" class="btn btn-dark" value="Remove">` ;
+    
+  //    ulTag1.append(liTag);    
+  // });
+
+</script>
+
+<script>
+
+   function deletefun()
+   {
+          const ulTag =  document.getElementById("ulTag");
+          ulTag.removeChild(ulTag.firstElementChild);
+          liTag.remove();
+   };
+
+  getbtn3.addEventListener("click",() => {
+   
+    const liTag1 = document.createElement("li");
+    getbtn3.innerHTML = "remove";
+          liTag1.removeChild(getbtn3);  
+          ulTag1.removeChild(liTag1); 
+          ulTag1.appendChild(liTag1);  
+          getbtn3.style.marginLeft = "5px"
+          liTag.appendChild(getbtn1);
+  })
+
+          // liTag.appendChild(getbtn1);
+        
+</script>
+
+&nbsp; &nbsp; &nbsp; <input type="text" id="txtsearch" placeholder="Enter the color..">
+&nbsp; &nbsp;<input type="button" id="btn1" value="Apply color" class="btn btn-dark"> 
+
+<script>
+
+const getbtn4 = document.getElementById("btn1");
+// const txtsearch2 = document.getElementById("txtsearch");
+
+getbtn4.addEventListener("click",(cr) => {
+      document.body.style.backgroundColor = txtsearch.value
+});
+
+</script>
+
+
+
+</body>
+</html>
+

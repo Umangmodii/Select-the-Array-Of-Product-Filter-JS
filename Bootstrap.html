@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP | DESIGN</title>
+
+  <!-- Bootstrap Url -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<br>
+<br>
+
+<br>
+
+<div class="container">
+
+<h2>Change Background Color </h2> 
+
+&nbsp; &nbsp; &nbsp; <input type="text" id="txtsearch1" placeholder="Enter the color.." class="form-control">
+
+<br>
+
+&nbsp; &nbsp;<input type="button" id="btn2" value="Apply color" class="btn btn-dark"> 
+<br>
+<br>
+<br>
+
+</div>
+
+
+<script>
+
+const getbtn1 = document.getElementById("btn2");
+// const body = document.getElementById("");
+// const txtsearch2 = document.getElementById("txtsearch");
+
+getbtn1.addEventListener("click",(cr) => {
+  document.body.style.backgroundColor = txtsearch1.value
+  console.log(txtsearch1.value);
+});
+
+</script>
+<!-- 
+
+
+   <DIV class="container">
+
+    <h2> BOOTSTRAP | DESIGN | JS </h2>
+
+    <HR>
+
+        <form name="myForm">
+
+     <INPUT TYPE="TEXT" CLASS="form-control" placeholder="Enter the Product Name.." name="pname" id="txtsearch">
+        <small class="form-text text-danger"> </small>
+        <br>
+
+     <INPUT id="btn1" TYPE="submit" CLASS="btn btn-primary mt-3" value="Add Product" onclick="datasubmit()">
+     <!-- <INPUT id="btn2" TYPE="submit" CLASS="btn btn-success mt-3" value="Delete" onclick="datsubmit()"> -->
+
+        <!-- <ul  id="ulTag">
+    
+            <li id="liTag"> 
+          
+            </li>
+              
+          </ul>
+
+          </form>
+
+         </DIV>
+
+          <script>
+
+            function datasubmit()
+            {
+                let x = document.forms['myForm']['pname'].value;
+                
+                if(x == "")
+                {
+                    alert ("Please Enter the Value...");  
+                    return false;  
+                }
+
+                else
+                {
+                    return true;
+                }
+                
+            } -->
+
+          </script>
+
+        <script>
+
+            // function deletefun()
+            // {
+            //        const ulTag =  document.getElementById("ulTag");
+            //        ulTag.removeChild(ulTag.firstElementChild);
+            //        liTag.remove();
+            // };
+         
+         //   getbtn1.addEventListener("click",() => {
+            
+         //     const liTag1 = document.createElement("li");
+         //     getbtn3.innerHTML = "remove";
+         //           liTag1.removeChild(getbtn3);  
+         //           ulTag1.removeChild(liTag1); 
+         //           ulTag1.appendChild(liTag1);  
+         //        //    getbtn3.style.marginLeft = "5px"
+         //           liTag.appendChild(getbtn1);
+         //   })
+         
+         //           liTag.appendChild(getbtn1);
+
+  
+                 
+         </script>
+
+<script>
+
+//   const ulTag1 =  document.getElementById("ulTag");
+//   const liTag1 =  document.getElementById("liTag");
+//   const txtsearch1 = document.getElementById("txtsearch");
+//   const getbtn1 = document.getElementById("btn1");
+//   const getbtn2 = document.getElementById("btn2");
+// //   const getbtn3 = document.getElementById("btn3");
+ 
+
+  
+//    btn1.addEventListener("click",() => {
+//     const liTag1 = document.createElement("li");
+//     liTag1.innerHTML = `${txtsearch.value} <input type="button" id="btn3" class="btn btn-dark" value="Remove">` ;
+
+//      ulTag1.append(liTag);    
+//   });
+
+</script> -->
+
+
+<body>
+    
+</body>
+</html>
